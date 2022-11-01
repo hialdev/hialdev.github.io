@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!-- Owl Carousel 2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    
+    <header class="d-flex align-items-center justify-content-between header">
+        <!-- Image Brand-->
+        <a href="" class="brand me-5 d-block"><img src="./src/img/aldev-logo.svg" alt="" class="d-block w-100"></a>
+        <!-- Humburger button menu -->
+        <div class="nav-humb d-lg-none">
+            <span class="iconify" data-icon="fluent:text-align-right-16-filled"></span>
+        </div>
+        <!-- Menu -->
+        <nav class="nav-al me-auto">
+            <div class="nav-close d-lg-none">
+                <span class="iconify" data-icon="bi:arrow-right-circle-fill"></span>
+            </div>
+            <a href="" class="active">Home</a>
+            <a href="" class="">Projects</a>
+            <a href="" class="">Blog</a>
+            <a href="" class="">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- contact modal -->
+        <div class="chat-float" data-bs-toggle="modal" data-bs-target="#contactModal">
+            <img src="./src/img/icon/chat-box 1.png" alt="Chat Icon" class="d-block">
+        </div>
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog p-3 modal-dialog-scrollable m-0 mw-100 mh-100">
+                <div class="modal-content p-4 border-0" style="border-radius: 25px;">
+                    <div class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="iconify" data-icon="ep:close-bold"></span>
+                    </div>
+                    <div class="modal-header border-0 d-flex align-items-center justify-content-start gap-3">
+                        <img src="./src/img/icon/chat-box 1.png" alt="Chat Icon" class="d-block" style="width: 38.06px;height: 40px;">
+                        <h4>Chat Us</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6 index-1" style="z-index: 2;">
+                                <form action="">
+                                    <input type="text" name="name" class="form-control mb-2 border-0 bg-light p-3" placeholder="Hi, What is your name?">
+                                    <input type="text" name="name" class="form-control mb-2 border-0 bg-light p-3" placeholder="Please give your Phone / Whatsapp, for reply you">
+                                    <input type="text" name="name" class="form-control mb-2 border-0 bg-light p-3" placeholder="Please give your Email, for reply you too">
+                                    <input type="text" name="name" class="form-control mb-2 border-0 bg-light p-3" placeholder="what do you need contact me? (Subject)">
+                                    <textarea name="message" id="message" cols="30" rows="10" class="form-control mb-2 border-0 bg-light p-3" placeholder="Explain your needs here.."></textarea>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span class="fw-bold text-nowrap">3 + 4</span>
+                                            <input type="text" class="form-control border-0 bg-light p-3" style="max-width: 5em;">
+                                        </div>
+                                        <button type="submit" class="btn-al primary">Send</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-6">
+                                <h3># Direct Messages</h3>
+                                <div class="d-flex gap-2 flex-column chat-dm">
+                                    <a href="" class="d-flex align-items-center justify-content-between p-3 fb">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="iconify fs-3" data-icon="fa6-brands:facebook-f"></span>
+                                            username
+                                        </div>
+                                        <span class="iconify fs-3" data-icon="bi:arrow-right"></span>
+                                    </a>
+                                    <a href="" class="d-flex align-items-center justify-content-between p-3 wa">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="iconify fs-3" data-icon="cib:whatsapp"></span>
+                                            username
+                                        </div>
+                                        <span class="iconify fs-3" data-icon="bi:arrow-right"></span>
+                                    </a>
+                                    <a href="" class="d-flex align-items-center justify-content-between p-3 ig">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="iconify fs-3" data-icon="fontisto:instagram"></span>
+                                            username
+                                        </div>
+                                        <span class="iconify fs-3" data-icon="bi:arrow-right"></span>
+                                    </a>
+                                    <a href="" class="d-flex align-items-center justify-content-between p-3 mail">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="iconify fs-3" data-icon="ic:baseline-mail-outline"></span>
+                                            username
+                                        </div>
+                                        <span class="iconify fs-3" data-icon="bi:arrow-right"></span>
+                                    </a>
+                                    <a href="" class="d-flex align-items-center justify-content-between p-3 drbl">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="iconify fs-3" data-icon="fa:dribbble"></span>
+                                            username
+                                        </div>
+                                        <span class="iconify fs-3" data-icon="bi:arrow-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end contact modal -->
+        <section class="hero pt-5 mt-5 overflow-hidden">
+            <div class="container ">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-7">
+                        <!-- Hero Carousel -->
+                        <div class="owl-carousel owl-theme hero-carousel">
+                            <div>
+                                <h1>Heading One For Big Title or Jumbotron</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus pellentesque eu auctor libero quisque tempor natoque. Ut vel facilisi pretium etiam scelerisque. Lacus rhoncus rhoncus, elit integer etiam. Feugiat ullamcorper eget sit nunc. </p>
+                                <a href="" class="btn-al primary">ACT Button</a>
+                            </div>
+                            <div>
+                                <h1>Hello My Name is AL</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus pellentesque eu auctor libero quisque tempor natoque. Ut vel facilisi pretium etiam scelerisque. Lacus rhoncus rhoncus, elit integer etiam. Feugiat ullamcorper eget sit nunc. </p>
+                                <a href="" class="btn-al primary">Touch Me</a>
+                            </div>
+                            <div>
+                                <h1>I am so Handsome, Anjay</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus pellentesque eu auctor libero quisque tempor natoque. Ut vel facilisi pretium etiam scelerisque. Lacus rhoncus rhoncus, elit integer etiam. Feugiat ullamcorper eget sit nunc. </p>
+                                <a href="" class="btn-al primary">Check Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 d-none d-md-block">
+                        <img src="./src/img/img-hero.png" alt="Image Hero" class="d-block w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="do pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h2>What i do?</h2>
+                            <div class="outline-text d-none d-md-block">My Skills</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 mb-4">
+                            <div class="card-body p-4" data-bs-toggle="modal" data-bs-target="#uiuxModal">
+                                <img src="./src/img/icon/design.png" alt="UI/UX Design Icon" class="d-block mb-4">
+                                <h4>UI/UX Design</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus pellentesque eu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="uiuxModal" tabindex="-1" aria-labelledby="uiuxModalLabel" aria-hidden="true">
+                        <div class="modal-dialog pt-3 modal-dialog-scrollable m-0 mw-100 mh-100">
+                            <div class="modal-content p-4 border-0" style="border-radius: 25px;">
+                                <div class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span class="iconify" data-icon="ep:close-bold"></span>
+                                </div>
+                                <div class="modal-header border-0 d-flex align-items-center justify-content-start gap-3">
+                                    <img src="./src/img/icon/design.png" alt="UI/UX Design Icon" class="d-block" style="width: 38.06px;height: 40px;">
+                                    <h4>UI UX Design</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus pellentesque eu auctor libero quisque tempor natoque. Ut vel facilisi pretium etiam scelerisque. Lacus rhoncus rhoncus, elit integer etiam. Feugiat ullamcorper eget sit nunc. Varius nibh aliquam orci augue adipiscing. Sit adipiscing nulla et aliquet volutpat scelerisque luctus. Morbi tempus adipiscing sed vestibulum tempor at. Quam tellus cursus feugiat at sollicitudin ipsum arcu. Volutpat quam sed eget eget eget tempus pellentesque vestibulum gravida. Ipsum donec aliquet id risus pulvinar. Lectus augue pretium quis libero. Varius ullamcorper tellus blandit nibh pellentesque risus.
+                                        Ipsum amet, tristique quam cras condimentum sapien scelerisque lorem faucibus. Facilisi tortor massa aliquam.
+                                    </p>
+                                    <h3># Responsibility</h3>
+                                    <ul class="list-unstyled list-resp">
+                                        <li>
+                                            <h4>Step 1 - Briefing</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Step 2 - Make a Confirmation Letter</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Step 3 - UX Research</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Step 4 - Exploring</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Step 5 - Make a Low Fidelity Concept & Brainstorming</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Step 6 - Make a High Fidelity Concept & Perfecting</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Step 7 - Testing</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Step 8 - Handover File and Guideline</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 mb-4" data-bs-toggle="modal" data-bs-target="#webModal">
+                            <div class="card-body p-4">
+                                <img src="./src/img/icon/web-development.png" alt="Web Development Icon" class="d-block mb-4">
+                                <h4>Web Development</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus pellentesque eu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="webModal" tabindex="-1" aria-labelledby="webModalLabel" aria-hidden="true">
+                        <div class="modal-dialog pt-3 modal-dialog-scrollable m-0 mw-100 mh-100">
+                            <div class="modal-content p-4 border-0" style="border-radius: 25px;">
+                                <div class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span class="iconify" data-icon="ep:close-bold"></span>
+                                </div>
+                                <div class="modal-header border-0 d-flex align-items-center justify-content-start gap-3">
+                                    <img src="./src/img/icon/web-development.png" alt="web-development Icon" class="d-block" style="width: 38.06px;height: 40px;">
+                                    <h4>Web Development</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus pellentesque eu auctor libero quisque tempor natoque. Ut vel facilisi pretium etiam scelerisque. Lacus rhoncus rhoncus, elit integer etiam. Feugiat ullamcorper eget sit nunc. Varius nibh aliquam orci augue adipiscing. Sit adipiscing nulla et aliquet volutpat scelerisque luctus. Morbi tempus adipiscing sed vestibulum tempor at. Quam tellus cursus feugiat at sollicitudin ipsum arcu. Volutpat quam sed eget eget eget tempus pellentesque vestibulum gravida. Ipsum donec aliquet id risus pulvinar. Lectus augue pretium quis libero. Varius ullamcorper tellus blandit nibh pellentesque risus.
+                                        Ipsum amet, tristique quam cras condimentum sapien scelerisque lorem faucibus. Facilisi tortor massa aliquam.
+                                    </p>
+                                    <h3># Responsibility</h3>
+                                    <ul class="list-unstyled list-resp">
+                                        <li>
+                                            <h4>Step 1 - Briefing</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Step 2 - Make a Confirmation Letter</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Step 3 - UX Research</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Step 4 - Exploring</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Step 5 - Make a Low Fidelity Concept & Brainstorming</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Step 6 - Make a High Fidelity Concept & Perfecting</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Step 7 - Testing</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Step 8 - Handover File and Guideline</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam commodi minus dicta praesentium consequuntur, omnis dolorem consequatur amet ad voluptas ducimus recusandae ipsum quo, corrupti qui, eligendi temporibus ut blanditiis?</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 mb-4">
+                            <div class="card-body p-4">
+                                <img src="./src/img/icon/social-media (1).png" alt="Digital Marketing Icon" class="d-block mb-4">
+                                <h4>Digital Marketing</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus pellentesque eu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 mb-4">
+                            <div class="card-body p-4">
+                                <img src="./src/img/icon/analyst 1.png" alt="System Analyst Icon" class="d-block mb-4">
+                                <h4>System Analyst</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus pellentesque eu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 mb-4">
+                            <div class="card-body p-4">
+                                <img src="./src/img/icon/talent-search 1.png" alt="HR Development icon" class="d-block mb-4">
+                                <h4>HR Development</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus pellentesque eu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 mb-4">
+                            <div class="card-body p-4">
+                                <img src="./src/img/icon/social-media.png" alt="Social Media Mangement Icon" class="d-block mb-4">
+                                <h4>Social Media Mangement</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus pellentesque eu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 mb-4">
+                            <div class="card-body p-4">
+                                <img src="./src/img/icon/idea.png" alt="Content Design Icon" class="d-block mb-4">
+                                <h4>Content Design</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus pellentesque eu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 mb-4">
+                            <div class="card-body p-4">
+                                <img src="./src/img/icon/idea (1) 1.png" alt="Idea Maker Icon" class="d-block mb-4">
+                                <h4>Idea Maker</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus pellentesque eu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="project pt-5">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h2>Latest Projects</h2>
+                    <div class="d-flex align-items-center gap-3 justify-content-between">
+                        <div class="prev d-flex align-items-center gap-2 justify-content-between">
+                            <span class="iconify fs-2" data-icon="bi:arrow-left-circle-fill"></span>
+                            <div class="fw-bold">Prev</div>
+                        </div>
+                        <div class="next d-flex align-items-center gap-2 justify-content-between">
+                            <div class="fw-bold">Next</div>
+                            <span class="iconify fs-2" data-icon="bi:arrow-right-circle-fill"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme project-carousel pt-3">
+                    <div class="card-project">
+                        <img src="./src/img/dummy1 2.jpg" alt="Project Image">
+                        <div class="card-content">
+                            <div class="card-content d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h4>App Concept For LMWStore</h4>
+                                    <div class="d-flex align-items-center gap-2 justify-content-start">
+                                        <a href="" class="badge-al">Web Development</a>
+                                        <a href="" class="badge-al">UI / UX Design</a>
+                                    </div>
+                                </div>
+                                <a href="" class="d-flex align-items-center justify-content-center gap-2 link-al">
+                                    Demo
+                                    <span class="iconify fs-2" data-icon="uim:web-grid-alt"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-project">
+                        <img src="./src/img/dummy2 2.jpg" alt="Project Image">
+                        <div class="card-content d-flex align-items-center justify-content-between">
+                            <div>
+                                <h4>POS Dashboard</h4>
+                                <div class="d-flex align-items-center gap-2 justify-content-start">
+                                    <a href="" class="badge-al">Web Development</a>
+                                    <a href="" class="badge-al">UI / UX Design</a>
+                                </div>
+                            </div>
+                            <a href="" class="d-flex align-items-center justify-content-center gap-2 link-al">
+                                Demo
+                                <span class="iconify fs-2" data-icon="uim:web-grid-alt"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="post pt-5">
+            <div class="container pt-5">
+                <div class="d-flex justify-content-between">
+                    <h2>Latest Post</h2>
+                    <div class="outline-text d-none d-md-block">My Blog</div>
+                </div>
+                <div class="owl-carousel post-carousel pt-4">
+                    <a href="" class="post-card">
+                        <img src="./src/img/unsplash_iw0D_9wHnf4.jpg" alt="Image Post" class="d-block mb-3">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </a>
+                    <a href="" class="post-card">
+                        <img src="./src/img/unsplash_iw0D_9wHnf4.jpg" alt="Image Post" class="d-block mb-3">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </a>
+                    <a href="" class="post-card">
+                        <img src="./src/img/unsplash_iw0D_9wHnf4.jpg" alt="Image Post" class="d-block mb-3">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </a>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-lg-6">
+                        <a href="" class="list-post-card">
+                            <img src="./src/img/Rectangle 334.jpg" alt="Image Post Horizontal" class="d-block">
+                            <div class="px-4">
+                                <div class="text-secondary">Kamis, 02 Ag 22 - 18:32 WIB</div>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <a href="" class="list-post-card">
+                            <img src="./src/img/Rectangle 334.jpg" alt="Image Post Horizontal" class="d-block">
+                            <div class="px-4">
+                                <div class="text-secondary">Kamis, 02 Ag 22 - 18:32 WIB</div>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <a href="" class="list-post-card">
+                            <img src="./src/img/Rectangle 334.jpg" alt="Image Post Horizontal" class="d-block">
+                            <div class="px-4">
+                                <div class="text-secondary">Kamis, 02 Ag 22 - 18:32 WIB</div>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <a href="" class="list-post-card">
+                            <img src="./src/img/Rectangle 334.jpg" alt="Image Post Horizontal" class="d-block">
+                            <div class="px-4">
+                                <div class="text-secondary">Kamis, 02 Ag 22 - 18:32 WIB</div>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a href="" class="btn-al secondary">More Blog</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container pt-5 mt-5">
+            <div class="row p-3 py-5 p-md-5 nav-footer">
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="d-flex flex-column gap-2 list-nav">
+                        <h4>Page Links</h4>
+                        <a href="">About Me</a>
+                        <a href="">Contact</a>
+                        <a href="">Make a Project</a>
+                        <a href="">Projects</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 order-last order-lg-0">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="./src/img/aldev-logo.svg" alt="Aldev Footer Logo" class="d-block boder-bottom border-2" style="width: 82px;height: 55.3px;">
+                        <hr class="my-4">
+                        <div class="d-flex align-items-center justify-content-center socmed gap-3">
+                            <a href="" class="tt"><span class="iconify" data-icon="ph:tiktok-logo-fill"></span></a>
+                            <a href="" class="ig"><span class="iconify" data-icon="ri:instagram-fill"></span></a>
+                            <a href="" class="fb"><span class="iconify" data-icon="bi:facebook"></span></a>
+                            <a href="" class="yt"><span class="iconify" data-icon="entypo-social:youtube"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="d-flex flex-column gap-2 list-nav text-md-end">
+                        <h4>Latest Project & Post</h4>
+                        <a href="">Elang Merah Api Ticketing</a>
+                        <a href="">Trick cepat memahami pemograman</a>
+                        <a href="">Cara membuat background paralax css</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center gap-3 py-4">
+                &copy; All Reserved by<strong>Hialdev</strong>- 2022
+            </div>
+        </div>
+    </footer>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel 2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+
+    <!-- Internal JS -->
+    <script src="./src/js/carousel.js"></script>
+    <script src="./src/js/script.js"></script>
+
+</body>
+</html>

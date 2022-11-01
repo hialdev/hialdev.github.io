@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*, *::after, *::before {
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s ease-in-out;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.link-al {
+  text-decoration: none;
+  color: #7A1BF3;
+}
+.link-al:hover {
+  text-decoration: underline;
+  color: #7A1BF3;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 80px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.outline-text {
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 150px;
+  text-align: right;
+  color: transparent;
+  -webkit-text-stroke-color: #7A1BF3;
+  -webkit-text-stroke-width: 2px;
+  margin-bottom: -0.7em;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+.btn-al {
+  display: inline-block;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 15px;
+}
+.btn-al.primary {
+  background: linear-gradient(90deg, #fff 32px, #7A1BF3 8.86%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.btn-al.primary::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #7A1BF3;
+  border-radius: 10px;
+  width: 32px;
+  height: 100%;
+  z-index: -1;
+}
+.btn-al.primary::after {
+  content: url("https://api.iconify.design/bi/arrow-right.svg?color=%237a1bf3");
+  margin-left: 0.6em;
+}
+.btn-al.primary:hover {
+  -webkit-text-fill-color: #fff;
+  text-fill-color: #fff;
+}
+.btn-al.primary:hover::before {
+  width: 100%;
+}
+.btn-al.primary:hover::after {
+  content: url("https://api.iconify.design/bi/arrow-right.svg?color=white");
+}
+.btn-al.secondary {
+  color: #7A1BF3;
+}
+.btn-al.secondary::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #EDEDED;
+  width: 40%;
+  height: 18px;
+  border-radius: 2px;
+  z-index: -1;
+}
+.btn-al.secondary::after {
+  content: url("https://api.iconify.design/bi/arrow-right.svg?color=%237a1bf3");
+  margin-left: 0.6em;
+}
+.btn-al.secondary:hover::before {
+  width: 60%;
+}
+
+.list-resp {
+  border-left: 3px solid #7A1BF3;
+}
+.list-resp > li {
+  margin-left: 1.5em;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #C4C4C4;
+  background-color: #EDEDED;
+  padding: 1.5em;
+  border-bottom-left-radius: 50px;
+  cursor: pointer;
+}
+.modal-close > .iconify {
+  font-size: 27px;
+  color: inherit;
+}
+.modal-close:hover {
+  background-color: #cc3a3a;
+  color: #fff;
+}
+
+.chat-dm a {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+}
+.chat-dm a > div > .iconify {
+  width: 1em;
+  height: 1em;
+}
+.chat-dm a .iconify {
+  color: inherit;
+}
+.chat-dm a.fb {
+  background: linear-gradient(90.66deg, #164C91 0%, #1877F2 102.33%);
+}
+.chat-dm a.wa {
+  background: linear-gradient(90.61deg, #3C6A4F -1.21%, #4A7D5E 109.89%);
+}
+.chat-dm a.ig {
+  background: linear-gradient(91.14deg, #C93E3E 0.34%, #8C3EC9 103.06%);
+}
+.chat-dm a.mail {
+  background: linear-gradient(90.47deg, #981616 0.16%, #CB4141 115.48%);
+}
+.chat-dm a.drbl {
+  background: linear-gradient(90.33deg, #B2215A 0.29%, #E74D89 102.43%);
+}
+
+.owl-carousel.owl-theme .owl-dots .owl-dot span {
+  width: 23px;
+  margin: 0px 3px;
+  background: #C4C4C4;
+}
+.owl-carousel.owl-theme .owl-dots .owl-dot.active span {
+  background: #7A1BF3;
+  width: 59px;
+}
+
+.project-carousel.owl-theme .owl-stage-outer {
+  padding: 2em 0px !important;
+}
+.project-carousel.owl-theme .owl-dots {
+  margin-top: 3em !important;
+  text-align: left;
+}
+.hero-carousel.owl-theme .owl-dots {
+  margin-top: 9em !important;
+  text-align: left;
+}
+@media (min-width: 0px) and (max-width: 991.98px) {
+  .hero-carousel.owl-theme .owl-dots {
+    margin: 3em 0px !important;
+  }
+}
+
+.header {
+  padding: 15px 23px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.badge-al {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 110%;
+  padding: 4px 8px;
+  background-color: #EDEDED;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #7A1BF3;
+}
+.badge-al:hover {
+  color: #7A1BF3;
+  text-decoration: underline;
+}
+
+/*
+    Hanya 1 nav menu yang dapat beradaptasi di dekstop dan mobile
+    ketika mobile akan muncul humburger menu buttonnya
+    ketika di klik humburgernya akan memunculkan menu dengan active class
+    ketika menu active maka terdapat button close menu
+    klik close menu maka akan menyembunyikan menyu dan menghapus active class
+*/
+.brand {
+  width: 44px;
+  height: 32.3px;
+}
+
+.nav-al > a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #a5a5a5;
+  margin-right: 30px;
+}
+.nav-al > a:hover {
+  color: #212121;
+}
+.nav-al > a.active {
+  color: #7A1BF3;
+  font-weight: 500;
+}
+@media (min-width: 0px) and (max-width: 991.98px) {
+  .nav-al {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #EDEDED;
+    width: 20em;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 1em;
+    padding: 16px 23px;
+    transform: translateX(100%);
+  }
+  .nav-al > a {
+    margin-right: 0px;
+  }
+  .nav-al.active {
+    transform: translateX(0);
+  }
+}
+
+.nav-humb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-humb > .iconify {
+  font-size: 27px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.nav-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #C4C4C4;
+}
+.nav-close > .iconify {
+  font-size: 27px;
+  color: inherit;
+  cursor: pointer;
+}
+.nav-close > .iconify:hover {
+  color: #7A1BF3;
+}
+
+.chat-float {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #fff;
+  padding: 0.8em;
+  z-index: 999;
+  cursor: pointer;
+}
+.chat-float > img {
+  width: 40px;
+  height: 40px;
+}
+
+.hero {
+  max-height: 738px;
+  background: linear-gradient(174.83deg, #FFFFFF 11.81%, #F7F7F7 97.06%);
+}
+
+.do {
+  background: #F7F7F7;
+}
+.do .card {
+  cursor: pointer;
+  border-radius: 25px !important;
+}
+.do .card:hover {
+  box-shadow: 15px 25px 50px -20px rgba(122, 27, 243, 0.17);
+}
+
+.project {
+  background: linear-gradient(180deg, #F7F7F7 45.74%, rgba(255, 255, 255, 0) 100%);
+}
+.project .card-project {
+  position: relative;
+  box-shadow: 40px 30px 50px -20px rgba(122, 27, 243, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 18em;
+  max-width: 992px;
+}
+.project .card-project > img {
+  width: 100%;
+}
+.project .card-project .card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 28px 30px;
+  border-radius: 20px 0px 20px 20px;
+  background-color: #fff;
+}
+.project .prev, .project .next {
+  color: #C4C4C4;
+  font-weight: 500;
+  cursor: pointer;
+}
+.project .prev:hover, .project .next:hover {
+  color: #7A1BF3;
+}
+.project .prev > .iconify, .project .next > .iconify {
+  transition: all 0.1s ease-in-out !important;
+}
+
+.post .post-card {
+  display: block;
+  text-decoration: none;
+  color: #212121;
+  width: 348px;
+}
+@media (min-width: 0px) and (max-width: 479.98px) {
+  .post .post-card {
+    width: 100%;
+  }
+}
+.post .post-card > img {
+  border-radius: 15px;
+  width: 100%;
+  height: 261px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.post .post-card:hover h4 {
+  text-decoration: underline;
+}
+.post .list-post-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  color: #212121;
+  margin-bottom: 1.5em;
+}
+.post .list-post-card > img {
+  width: 194px;
+  height: 194px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.post .list-post-card:hover {
+  box-shadow: 10px 20px 50px -20px rgba(122, 27, 243, 0.15);
+  border-radius: 15px;
+}
+.post .list-post-card:hover h4 {
+  text-decoration: underline;
+}
+
+.nav-footer {
+  background-color: #EDEDED;
+  border-radius: 25px;
+}
+.nav-footer .list-nav > a {
+  color: #212121;
+  text-decoration: none;
+}
+.nav-footer .list-nav > a:hover {
+  color: #212121;
+  text-decoration: underline;
+}
+.nav-footer hr {
+  width: 60%;
+}
+.nav-footer .socmed > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-footer .socmed > a > .iconify {
+  font-size: 27px;
+  color: inherit;
+}
+.nav-footer .socmed > a.tt {
+  color: #212121;
+}
+.nav-footer .socmed > a.ig {
+  color: #E1145E;
+}
+.nav-footer .socmed > a.fb {
+  color: #2C67B7;
+}
+.nav-footer .socmed > a.yt {
+  color: #FF0000;
+}/*# sourceMappingURL=style.css.map */

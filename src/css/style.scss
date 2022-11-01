@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// Variable
+// -- color
+$prm : #7A1BF3;
+$gray : #C4C4C4;
+$soft : #F7F7F7;
+$graylight : #EDEDED;
+$dark : #212121;
+$black : #000;
+$light : #fff;
+// -- device size
+$sm-w : 576px;
+$md-w : 768px;
+$lg-w : 992px;
+$xl-w : 1200px;
+
+// Guideline ---------------------------------
+// -- Typography
+*,*::after,*::before{
+    font-family: 'Poppins',sans-serif;
+    transition: all 0.2s ease-in-out;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+.link-al{
+    text-decoration: none;
+    color:$prm;
+    &:hover{text-decoration: underline;color:$prm}
+}
+h1{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+}
+h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+}
+h3{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+}
+h4{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.outline-text{
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 150px;
+    text-align: right;
+    color: transparent;
+    -webkit-text-stroke-color: $prm;
+    -webkit-text-stroke-width: 2px;
+    margin-bottom: -0.7em;
+}
+// -- body
+body{
+    overflow-x: hidden !important;
+}
+// -- Button
+.btn-al{
+    display: inline-block;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    position: relative;
+    padding : 5px 15px;
+
+    &.primary{
+        background: linear-gradient(90deg, $light 32px, $prm 8.86%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        &::before{
+            content : '';
+            position : absolute;
+            bottom : 0;
+            left : 0;
+            background-color: $prm;
+            border-radius: 10px;
+            width: 32px;
+            height: 100%;
+            z-index: -1;
+        }
+        &::after{
+            content: url('https://api.iconify.design/bi/arrow-right.svg?color=%237a1bf3');
+            margin-left: 0.6em;
+        }
+        &:hover{
+            -webkit-text-fill-color: $light;
+            text-fill-color: $light;
+            &::before{width:100%}
+            &::after{content: url('https://api.iconify.design/bi/arrow-right.svg?color=white');}
+        }
+    }
+    &.secondary{
+        color: $prm;
+        &::before{
+            content : '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $graylight;
+            width: 40%;
+            height: 18px;
+            border-radius: 2px;
+            z-index: -1;
+        }
+        &::after{
+            content: url('https://api.iconify.design/bi/arrow-right.svg?color=%237a1bf3');
+            margin-left: 0.6em;
+        }
+        &:hover{
+            &::before{
+                width: 60%;
+            }
+        }
+
+    }
+}
+
+// -- Modals
+// - list responsibility
+.list-resp{
+    border-left: 3px solid $prm;
+    >li{margin-left: 1.5em;}
+}
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: $gray;
+    background-color: $graylight;
+    padding: 1.5em;
+    border-bottom-left-radius: 50px;
+    cursor:pointer;
+    >.iconify{
+        font-size: 27px;
+        color:inherit;
+    }
+    &:hover{
+        background-color: #cc3a3a;
+        color: $light
+    }
+}
+// - Chat Modal
+.chat-dm{
+    a{
+        &>div>.iconify{width:1em;height:1em}
+        color:$light;
+        text-decoration: none;
+        .iconify{color:inherit}
+        border-radius: 15px;
+        &.fb{
+            background: linear-gradient(90.66deg, #164C91 0%, #1877F2 102.33%);
+        }
+        &.wa{
+            background: linear-gradient(90.61deg, #3C6A4F -1.21%, #4A7D5E 109.89%);
+        }
+        &.ig{
+            background: linear-gradient(91.14deg, #C93E3E 0.34%, #8C3EC9 103.06%);
+        }
+        &.mail{
+            background: linear-gradient(90.47deg, #981616 0.16%, #CB4141 115.48%);
+        }
+        &.drbl{
+            background: linear-gradient(90.33deg, #B2215A 0.29%, #E74D89 102.43%);
+        }
+    }
+}
+
+
+// Custom Style Lib ------------------------------------
+.owl-carousel.owl-theme .owl-dots .owl-dot{
+    span{
+        width:23px;
+        margin: 0px 3px;
+        background: $gray;
+    }
+    &.active{
+        span{
+            background: $prm;
+            width: 59px;
+        }
+    }
+}
+.project-carousel.owl-theme {
+    .owl-stage-outer{
+        padding: 2em 0px !important;
+    }
+    .owl-dots {
+        margin-top: 3em !important;
+        text-align: left;
+        
+        @media (min-width: 0px) and (max-width: 991.98px){
+            
+        }
+    }
+}
+.hero-carousel.owl-theme .owl-dots {
+    margin-top: 9em !important;
+    text-align: left;
+    
+    @media (min-width: 0px) and (max-width: 991.98px){
+        margin: 3em 0px !important;
+    }
+}
+
+// Components ------------------------------------
+.header{
+    padding: 15px 23px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: $light;
+    z-index: 999;
+}
+// -- Badge
+.badge-al{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 110%;
+    padding: 4px 8px;
+    background-color: $graylight;
+    border-radius: 3px;
+    text-decoration: none;
+    color: $prm;
+    &:hover{color:$prm;text-decoration: underline;}
+}
+// -- Menu
+// Logic Style
+/*
+    Hanya 1 nav menu yang dapat beradaptasi di dekstop dan mobile
+    ketika mobile akan muncul humburger menu buttonnya
+    ketika di klik humburgernya akan memunculkan menu dengan active class
+    ketika menu active maka terdapat button close menu
+    klik close menu maka akan menyembunyikan menyu dan menghapus active class
+*/
+// - brand
+.brand{
+    width: 44px;
+    height: 32.3px;
+}
+// - Nav Menu
+.nav-al{
+    >a{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        text-decoration: none;
+        color: #a5a5a5;
+        margin-right: 30px;
+        &:hover{color:$dark}
+        &.active{color:$prm;font-weight: 500;}
+    }
+    @media (min-width: 0px) and (max-width: 991.98px){
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background-color: $graylight;
+        width: 20em;
+        display:flex;
+        align-items: end;
+        flex-direction: column;
+        gap: 1em;
+        padding: 16px 23px;
+        transform: translateX(100%);
+        >a{margin-right: 0px;}
+        &.active{transform: translateX(0);}
+    }
+}
+// - Nav humb button
+.nav-humb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >.iconify{
+        font-size: 27px;
+        color: inherit;
+        cursor: pointer;
+    }
+}
+// - Nav Close
+.nav-close{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $gray;
+    >.iconify{
+        font-size: 27px;
+        color: inherit;
+        cursor: pointer;
+        &:hover{color:$prm}
+    }
+}
+
+// -- Chat Float
+.chat-float{
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: $light;
+    padding: 0.8em;
+    z-index: 999;
+    cursor: pointer;
+    >img{
+        width:40px;
+        height:40px;
+    }
+}
+
+
+// Section ------------------------------------
+
+// -- Hero
+.hero{
+    max-height:738px;
+    background: linear-gradient(174.83deg, #FFFFFF 11.81%, #F7F7F7 97.06%);
+}
+
+// -- My Skills
+.do{
+    background: #F7F7F7;
+    .card{
+        cursor: pointer;
+        border-radius: 25px !important;
+        &:hover{
+            box-shadow: 15px 25px 50px -20px rgba(122, 27, 243, 0.17);
+        }
+    }
+}
+
+// -- Project
+.project{
+    background: linear-gradient(180deg, #F7F7F7 45.74%, rgba(255, 255, 255, 0) 100%);
+    .card-project{
+        position: relative;
+        box-shadow: 40px 30px 50px -20px rgba(122, 27, 243, 0.05);
+        border-radius: 20px;
+        overflow: hidden;
+        min-height: 18em;
+        max-width: 992px;
+        >img{width:100%}
+        .card-content{
+            position:absolute;
+            bottom:0;
+            left:0;
+            right:0;
+            padding: 28px 30px;
+            border-radius: 20px 0px 20px 20px;
+            background-color: $light;
+        }
+    }
+
+    .prev,.next{
+        color: $gray;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover{
+            color: $prm;
+        }
+        >.iconify{transition: all 0.1s ease-in-out !important;}
+    }
+}
+
+// -- Post
+.post{
+    .post-card{
+        display: block;
+        text-decoration: none;
+        color: $dark;
+        width: 348px;
+        @media (min-width: 0px) and (max-width: 479.98px){
+            width:100%;
+        }
+        >img{
+            border-radius: 15px;
+            width: 100%;
+            height: 261px;
+            object-fit: cover;
+        }
+        &:hover{
+            h4{text-decoration: underline;}
+        }
+    }
+    .list-post-card{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-decoration: none;
+        color: $dark;
+        margin-bottom: 1.5em;
+        >img{
+            width: 194px;
+            height: 194px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        
+        &:hover{
+            box-shadow: 10px 20px 50px -20px rgba(122, 27, 243, 0.15);
+            border-radius: 15px;
+            h4{text-decoration: underline;}
+        }
+    }
+}
+
+// ------- Footer
+.nav-footer{
+    background-color: $graylight;
+    border-radius: 25px;
+
+    .list-nav>a{
+        color: $dark;
+        text-decoration: none;
+        &:hover{color:$dark;text-decoration: underline;}
+    }
+    hr{
+        width:60%;
+    }
+    .socmed{
+        >a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            >.iconify{font-size: 27px;color:inherit}
+            &.tt{color:$dark}
+            &.ig{color:#E1145E}
+            &.fb{color:#2C67B7}
+            &.yt{color:#FF0000}
+        }
+    }
+}
