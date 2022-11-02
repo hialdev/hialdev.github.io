@@ -324,7 +324,7 @@ body{
         top: 0;
         right: 0;
         height: 100vh;
-        background-color: $graylight;
+        background-color: $light;
         width: 20em;
         display:flex;
         align-items: end;
@@ -352,12 +352,11 @@ body{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: $gray;
+    color: $prm;
     >.iconify{
         font-size: 27px;
         color: inherit;
         cursor: pointer;
-        &:hover{color:$prm}
     }
 }
 

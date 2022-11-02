@@ -330,7 +330,7 @@ body {
     top: 0;
     right: 0;
     height: 100vh;
-    background-color: #EDEDED;
+    background-color: #fff;
     width: 20em;
     display: flex;
     align-items: end;
@@ -362,15 +362,12 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #C4C4C4;
+  color: #7A1BF3;
 }
 .nav-close > .iconify {
   font-size: 27px;
   color: inherit;
   cursor: pointer;
-}
-.nav-close > .iconify:hover {
-  color: #7A1BF3;
 }
 
 .chat-float {
