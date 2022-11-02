@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+}
+
+::-webkit-scrollbar-thumb {
+    background:linear-gradient(180deg, rgba(122, 27, 243, 0) 0%, #7A1BF3 22.92%, #7A1BF3 75%, rgba(122, 27, 243, 0) 100%); 
+}
+
 // Variable
 // -- color
 $prm : #7A1BF3;
@@ -23,6 +36,10 @@ $xl-w : 1200px;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+    @media (min-width: 0px) and (max-width: 991.98px){
+        font-size: 14px;
+        line-height: 27px; 
+    }
 }
 .link-al{
     text-decoration: none;
@@ -33,21 +50,37 @@ h1{
     font-weight: 700;
     font-size: 64px;
     line-height: 80px;
+    @media (min-width: 0px) and (max-width: 991.98px){
+        font-size: 42px;
+        line-height: 55px; 
+    }
 }
 h2{
     font-weight: 700;
     font-size: 40px;
     line-height: 53px;
+    @media (min-width: 0px) and (max-width: 991.98px){
+        font-size: 32px;
+        line-height: 40px; 
+    }
 }
 h3{
     font-weight: 600;
     font-size: 28px;
     line-height: 40px;
+    @media (min-width: 0px) and (max-width: 991.98px){
+        font-size: 20px;
+        line-height: 30px; 
+    }
 }
 h4{
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
+    @media (min-width: 0px) and (max-width: 991.98px){
+        font-size: 16px;
+        line-height: 29px; 
+    }
 }
 .outline-text{
     font-weight: 800;
@@ -58,6 +91,21 @@ h4{
     -webkit-text-stroke-color: $prm;
     -webkit-text-stroke-width: 2px;
     margin-bottom: -0.7em;
+}
+// -- Line Clamp
+.lc{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    &.lc-1{
+        -webkit-line-clamp: 1;
+    }
+    &.lc-2{
+        -webkit-line-clamp: 2;
+    }
+    &.lc-3{
+        -webkit-line-clamp: 3;
+    }
 }
 // -- body
 body{
@@ -74,7 +122,10 @@ body{
     text-decoration: none;
     position: relative;
     padding : 5px 15px;
-
+    @media (min-width: 0px) and (max-width: 991.98px){
+        font-size: 16px;
+        line-height: 25px; 
+    }
     &.primary{
         background: linear-gradient(90deg, $light 32px, $prm 8.86%);
         -webkit-background-clip: text;
@@ -164,6 +215,9 @@ body{
         text-decoration: none;
         .iconify{color:inherit}
         border-radius: 15px;
+        &:hover{
+            box-shadow: 15px 15px 20px -10px rgb(122 27 243 / 25%);
+        }
         &.fb{
             background: linear-gradient(90.66deg, #164C91 0%, #1877F2 102.33%);
         }
@@ -205,9 +259,7 @@ body{
         margin-top: 3em !important;
         text-align: left;
         
-        @media (min-width: 0px) and (max-width: 991.98px){
-            
-        }
+        
     }
 }
 .hero-carousel.owl-theme .owl-dots {
@@ -366,6 +418,12 @@ body{
             padding: 28px 30px;
             border-radius: 20px 0px 20px 20px;
             background-color: $light;
+            @media (min-width: 0px) and (max-width: 767.98px){
+                padding: 14px 22px;
+            }
+            @media (min-width: 768px) and (max-width: 991.98px){
+                padding: 20px 28px;
+            }
         }
     }
 
@@ -412,6 +470,14 @@ body{
             height: 194px;
             object-fit: cover;
             border-radius: 15px;
+            @media (min-width: 0px) and (max-width: 767.98px){
+                width: 100px;
+                height: 100px; 
+            }
+            @media (min-width: 768px) and (max-width: 991.98px){
+                width: 150px;
+                height: 150px; 
+            }
         }
         
         &:hover{

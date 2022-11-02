@@ -1,10 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(122, 27, 243, 0) 0%, #7A1BF3 22.92%, #7A1BF3 75%, rgba(122, 27, 243, 0) 100%);
+}
+
 *, *::after, *::before {
   font-family: "Poppins", sans-serif;
   transition: all 0.2s ease-in-out;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+}
+@media (min-width: 0px) and (max-width: 991.98px) {
+  *, *::after, *::before {
+    font-size: 14px;
+    line-height: 27px;
+  }
 }
 
 .link-al {
@@ -21,11 +40,23 @@ h1 {
   font-size: 64px;
   line-height: 80px;
 }
+@media (min-width: 0px) and (max-width: 991.98px) {
+  h1 {
+    font-size: 42px;
+    line-height: 55px;
+  }
+}
 
 h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 53px;
+}
+@media (min-width: 0px) and (max-width: 991.98px) {
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 h3 {
@@ -33,11 +64,23 @@ h3 {
   font-size: 28px;
   line-height: 40px;
 }
+@media (min-width: 0px) and (max-width: 991.98px) {
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 
 h4 {
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+}
+@media (min-width: 0px) and (max-width: 991.98px) {
+  h4 {
+    font-size: 16px;
+    line-height: 29px;
+  }
 }
 
 .outline-text {
@@ -49,6 +92,21 @@ h4 {
   -webkit-text-stroke-color: #7A1BF3;
   -webkit-text-stroke-width: 2px;
   margin-bottom: -0.7em;
+}
+
+.lc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.lc.lc-1 {
+  -webkit-line-clamp: 1;
+}
+.lc.lc-2 {
+  -webkit-line-clamp: 2;
+}
+.lc.lc-3 {
+  -webkit-line-clamp: 3;
 }
 
 body {
@@ -65,6 +123,12 @@ body {
   text-decoration: none;
   position: relative;
   padding: 5px 15px;
+}
+@media (min-width: 0px) and (max-width: 991.98px) {
+  .btn-al {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 .btn-al.primary {
   background: linear-gradient(90deg, #fff 32px, #7A1BF3 8.86%);
@@ -161,6 +225,9 @@ body {
 .chat-dm a .iconify {
   color: inherit;
 }
+.chat-dm a:hover {
+  box-shadow: 15px 15px 20px -10px rgba(122, 27, 243, 0.25);
+}
 .chat-dm a.fb {
   background: linear-gradient(90.66deg, #164C91 0%, #1877F2 102.33%);
 }
@@ -194,6 +261,7 @@ body {
   margin-top: 3em !important;
   text-align: left;
 }
+
 .hero-carousel.owl-theme .owl-dots {
   margin-top: 9em !important;
   text-align: left;
@@ -360,6 +428,16 @@ body {
   border-radius: 20px 0px 20px 20px;
   background-color: #fff;
 }
+@media (min-width: 0px) and (max-width: 767.98px) {
+  .project .card-project .card-content {
+    padding: 14px 22px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .project .card-project .card-content {
+    padding: 20px 28px;
+  }
+}
 .project .prev, .project .next {
   color: #C4C4C4;
   font-weight: 500;
@@ -407,6 +485,18 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
+}
+@media (min-width: 0px) and (max-width: 767.98px) {
+  .post .list-post-card > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .post .list-post-card > img {
+    width: 150px;
+    height: 150px;
+  }
 }
 .post .list-post-card:hover {
   box-shadow: 10px 20px 50px -20px rgba(122, 27, 243, 0.15);
