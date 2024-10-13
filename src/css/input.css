@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Blinking Cursor */
+#cursor {
+    display: inline-block;
+    content: '|';
+    width: 2px;
+    padding: 2px;
+    background-color: currentColor;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+section{
+    @apply rounded-[25px] mb-5;
+}
+
+#noScrollbar {
+    overflow: auto; /* Ensures the div is scrollable */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+#noScrollbar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and other WebKit-based browsers */
+}
+
+.dot{
+    transition: background-color 0.4s ease-in-out;
+}
+.dot.active{
+    @apply bg-purple-600 text-white hover:bg-purple-700 hover:text-white;
+}
+
+#itemProjects {
+    transform: translateX(100%); /* Mulai dari luar layar di sebelah kanan */
+}
+
+#itemProjects.show {
+    transform: translateX(0); /* Kembali ke posisi normal */
+}
+
+#introBox.hide {
+    transform: translateX(-100%); /* Menggeser keluar ke kiri */
+}
+
+/* Carousel */
+.projects-carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%; /* Pastikan lebar penuh */
+    position: relative;
+}
+
+.carousel-item {
+    flex: 0 0 auto; /* Pastikan item tidak mengecil */
+    margin-right: 10px; /* Jarak antar item */
+}
+
+.news-dots{
+    @apply flex items-center gap-1 mt-4;
+}
+
+.news-dots button.owl-dot{
+    @apply bg-purple-300 rounded-3xl w-[7px] h-[7px] aspect-square;
+}
+
+.news-dots button.owl-dot.active{
+    @apply bg-purple-700 w-[21px] aspect-auto;
+}
+
+/* Custom cursor */
+/* Menghilangkan cursor default */
+body {
+    cursor: none;
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(100, 100, 255, 0.6);
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+}
+
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(150, 150, 255, 0.8);
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0;
+    animation: particle-animation 0.6s forwards;
+}
+
+/* Animasi partikel */
+@keyframes particle-animation {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
