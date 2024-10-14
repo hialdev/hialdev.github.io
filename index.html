@@ -13,7 +13,7 @@
 
 </head>
 <body>
-    <div id="app" class="flex flex-col sm:flex-row h-screen bg-purple-50">
+    <div id="app" class="flex flex-col sm:flex-row h-screen bg-violet-50 dark:bg-indigo-950 dark:text-purple-100">
         <header>
             
             <div class="grid grid-cols-12 px-2 sm:grid-cols-1 grid-rows-1 sm:grid-rows-3 items-center justify-between sm:p-2 sm:h-screen">
@@ -33,12 +33,12 @@
                       
                         <div
                             id="dropdown-menu-down"
-                            class="absolute hidden mt-2 w-content bg-white rounded-lg shadow-lg overflow-hidden"
+                            class="absolute hidden mt-2 w-content bg-white dark:bg-purple-700 rounded-lg shadow-lg overflow-hidden"
                         >
                             <div class="p-3 cursor-pointer flex items-center justify-center bg-purple-600 text-white hover:bg-purple-700 hover:text-purple-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M6 21a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3zM18 5h-8v14h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1"/></svg>
                             </div>
-                            <div class="p-3 hover:bg-purple-100 cursor-pointer flex items-center justify-center text-slate-500 hover:text-purple-600">
+                            <div class="p-3 hover:bg-violet-100 cursor-pointer flex items-center justify-center text-slate-500 hover:text-purple-600">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M18 3a3 3 0 0 1 2.995 2.824L21 6v12a3 3 0 0 1-2.824 2.995L18 21H6a3 3 0 0 1-2.995-2.824L3 18V6a3 3 0 0 1 2.824-2.995L6 3zm1 6H5v9a1 1 0 0 0 .883.993L6 19h12a1 1 0 0 0 .993-.883L19 18z"/></svg>
                             </div>
                         </div>
@@ -71,10 +71,10 @@
                         <div class="flex items-center">
                             <!-- Vertical Toggle Switch -->
                             <label class="relative inline-flex flex-col-reverse items-center cursor-pointer">
-                                <input type="checkbox" class="sr-only peer">
-                                <div class="w-7 h-12 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:bg-purple-800"></div>
-                                <div class="absolute flex items-center justify-center top-[1px] left-[1px] w-4 h-4 p-3 bg-white border border-gray-300 rounded-full transition-all peer-checked:translate-y-5 peer-checked:border-white">
-                                    <div class="flex items-center justify-center rounded-lg text-purple-400">
+                                <input id="theme-toggle" type="checkbox" class="sr-only peer">
+                                <div class="w-7 h-12 bg-gray-200 dark:bg-purple-900 peer-focus:outline-none rounded-full peer peer-checked:bg-purple-800"></div>
+                                <div class="absolute flex items-center justify-center top-[1px] left-[1px] w-4 h-4 p-3 bg-white dark:bg-purple-500 border border-gray-300 dark:border-purple-900 rounded-full transition-all peer-checked:translate-y-5 peer-checked:border-white">
+                                    <div class="flex items-center justify-center rounded-lg text-purple-400 dark:text-purple-50">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M-90.24 1.89c-5.56 0-10.09 4.53-10.09 10.09s4.53 10.09 10.09 10.09s10.09-4.53 10.09-10.09s-4.53-10.09-10.09-10.09m5.74 15.51h-11.31c-.33 0-.6-.27-.6-.6s.27-.6.6-.6h11.31c.33 0 .6.27.6.6s-.27.6-.6.6m0-2.4h-11.31c-.33 0-.6-.27-.6-.6s.27-.6.6-.6h11.31c.33 0 .6.27.6.6s-.27.6-.6.6m0-2.4h-11.31c-.33 0-.6-.27-.6-.6s.27-.6.6-.6h11.31c.33 0 .6.27.6.6s-.27.6-.6.6m0-2.4h-11.31c-.33 0-.6-.27-.6-.6s.27-.6.6-.6h11.31c.33 0 .6.27.6.6s-.27.6-.6.6m0-2.4h-11.31c-.33 0-.6-.27-.6-.6s.27-.6.6-.6h11.31c.33 0 .6.27.6.6s-.27.6-.6.6m105.69 7.96a.49.49 0 0 0-.57-.09c-1.05.52-2.16.78-3.3.78c-4.14 0-7.5-3.37-7.5-7.5c0-2.38 1.1-4.57 3.03-6.01c.17-.12.19-.34.13-.54s-.29-.35-.49-.36c-.05 0-.11-.01-.16-.01c-5.5 0-9.98 4.48-9.98 9.98s4.48 9.98 9.98 9.98c3.79 0 7.31-2.21 8.97-5.64a.55.55 0 0 0-.11-.59M17.9 5.1l.92-1.76c.02-.04.02-.09-.01-.13s-.08-.06-.12-.05l-1.96.34l-1.39-1.42c-.03-.03-.08-.05-.13-.03c-.05.01-.08.05-.08.1l-.28 1.96l-1.78.88c-.04.02-.07.06-.07.11s.03.09.07.11l1.78.88l.29 1.96c.01.05.04.09.08.1c.01 0 .03.01.04.01c.03 0 .07-.01.09-.04l1.38-1.42l1.96.33c.05.01.09-.01.12-.05s.03-.09.01-.13zm3.2 4.52l.56-1.06c.02-.04.02-.09-.01-.13s-.07-.06-.12-.05l-1.18.2l-.83-.85c-.03-.03-.08-.05-.13-.03c-.05.01-.08.05-.08.1l-.17 1.18l-1.07.53c-.04.02-.07.06-.07.11s.03.09.07.11l1.07.53l.17 1.18c.01.05.04.09.08.1c.01 0 .03.01.04.01c.03 0 .07-.01.09-.04l.83-.86l1.18.2c.05.01.09-.01.12-.05s.03-.09.01-.13zm-4.66 2.77l.56-1.06c.02-.04.02-.09-.01-.13s-.07-.06-.12-.05l-1.18.2l-.83-.85c-.03-.03-.08-.05-.13-.03c-.05.01-.08.05-.08.1l-.17 1.18l-1.07.53c-.04.02-.07.06-.07.11s.03.09.07.11l1.07.53l.17 1.18c.01.05.04.09.08.1c.01 0 .03.01.04.01c.03 0 .07-.01.09-.04l.83-.86l1.18.2c.05.01.09-.01.12-.05s.03-.09.01-.13z"/></svg>
                                     </div>
                                 </div>
@@ -89,21 +89,21 @@
                 <div class="">
                     <div id="noScrollbar" class="overflow-auto h-screen">
                      
-                        <section class="h-full p-10 bg-white flex items-center justify-center">
+                        <section class="h-full p-10 bg-white dark:bg-purple-700 flex items-center justify-center">
                             <div class="flex items-center flex-wrap justify-center gap-4">
                                 <div>
                                     <img src="/src/assets/MuhammadNurAlif.png" alt="Image Profile" class="block rounded-full aspect-square w-full h-[12em] object-cover">
                                 </div>
                                 <div>
-                                    <h1 class="text-2xl sm:text-4xl font-medium">Hello, I am
-                                        <span class="block text-purple-600">Muhammad Nur Alif</span>
+                                    <h1 class="text-2xl sm:text-4xl font-medium dark:text-purple-950">Hello, I am
+                                        <span class="block text-purple-600 dark:text-purple-50">Muhammad Nur Alif</span>
                                     </h1>
                                     <div class="flex items-center gap-3 mt-4">
-                                        <span class="text-slate-400">a</span>
-                                        <div id="job-title" class="sm:text-xl text-slate-600 underline decoration-2 decoration-purple-600">
+                                        <span class="text-slate-400 dark:text-purple-300">a</span>
+                                        <div id="job-title" class="sm:text-xl text-slate-600 dark:text-violet-100 underline decoration-2 decoration-purple-600">
                                             <span id="typed-text"></span><span id="cursor"></span>
                                         </div>
-                                        <a href="" class="flex items-center justify-center p-3 rounded-lg text-slate-500 hover:text-purple-600 bg-purple-100 cursor-pointer">
+                                        <a href="" class="flex items-center justify-center p-3 rounded-lg text-slate-500 hover:text-purple-600 bg-violet-100 cursor-pointer">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4m-8 10v-6m-3 3l3 3l3-3"/></g></svg>
                                         </a>
                                     </div>
@@ -111,22 +111,22 @@
                             </div>
                         </section>
                         
-                        <section class="h-full w-full bg-violet-100 p-4 sm:p-8">
-                            <div id="projectsContainer" class="h-full relative flex items-center justify-center overflow-hidden">
+                        <section class="min-h-content w-full bg-violet-100 p-4 sm:p-8">
+                            <div id="projectsContainer" class="h-screen relative flex items-center justify-center overflow-hidden">
                                 <!-- Box Intro Projects -->
-                                <div id="introBox" class="absolute h-full w-full transition-transform duration-500 ease-in-out">
+                                <div id="introBox" class="absolute h-screen w-full transition-transform duration-500 ease-in-out">
                                     <div class="relative h-full flex items-center justify-center">
                                         <div class="absolute top-2 left-2 max-w-[10em] sm:max-w-[20em]">
-                                            <h2 class="text-xl sm:text-3xl mb-2 fw-medium">My Projects is My Cases</h2>
-                                            <p class="text-slate-400">Your needs is my missions</p>
+                                            <h2 class="text-xl sm:text-3xl mb-2 fw-medium dark:text-violet-950">My Projects is My Cases</h2>
+                                            <p class="text-slate-400 dark:text-slate-400">Your needs is my missions</p>
                                         </div>
                                         <div class="absolute top-2 right-2 text-right">
                                             <h3 class="text-3xl text-purple-600">13+</h3>
-                                            <p class="text-lg text-slate-400">Clients</p>
+                                            <p class="text-lg text-slate-400 dark:text-slate-400">Clients</p>
                                         </div>
                                         <div class="absolute bottom-2 left-2 text-left">
                                             <h3 class="text-3xl text-purple-600">36+</h3>
-                                            <p class="text-lg text-slate-400">Cases</p>
+                                            <p class="text-lg text-slate-400 dark:text-slate-400">Cases</p>
                                         </div>
                                         <div class="absolute bottom-2 right-2 text-right">
                                             <button id="seeProjectsBtn" type="button" class="p-4 px-6 rounded-[99px] font-medium bg-slate-800 text-purple-100 inline-flex items-center gap-3">
@@ -146,8 +146,8 @@
                                 <!-- Item Projects -->
                                 <div id="itemProjects" class="bg-transparent h-full w-full rounded-3xl absolute transform translate-x-full transition-transform duration-500 ease-in-out">
                                     <div id="noScrollbar" class="bg-transparent h-full w-full rounded-3xl overflow-auto">
-                                        <div class="mb-3">
-                                            <button id="backBtn" type="button" class="mb-4 inline-flex items-center gap-3 rounded-3xl p-3 hover:bg-slate-700 hover:text-white font-medium px-5 border-2 border-slate-300 text-slate-700">
+                                        <div class="mb-0">
+                                            <button id="backBtn" type="button" class="mb-4 inline-flex items-center gap-3 rounded-3xl p-3 hover:bg-slate-700 hover:text-white font-medium text-slate-700">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M5.841 5.28a.75.75 0 0 0-1.06-1.06L1.53 7.47L1 8l.53.53l3.25 3.25a.75.75 0 0 0 1.061-1.06l-1.97-1.97H14.25a.75.75 0 0 0 0-1.5H3.871z" clip-rule="evenodd"/></svg>
                                                 Back
                                             </button>
@@ -156,35 +156,38 @@
                                             <div>
                                                 <a href="" class="block w-full max-w-[40em]">
                                                     <img src="https://placehold.co/720x480" alt="Image Projects" class="block mb-3 w-full rounded-3xl aspect-video object-cover">
-                                                    <h6 class="text-slate-700 font-medium mb-3 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h6>
-                                                    <div class="flex items-center gap-2">
+                                                    <div class="flex items-center gap-2 mb-2">
                                                         <div class="border border-purple-600 text-purple-600 p-1 px-2 rounded-lg lowercase text-xs whitespace-nowrap">web development</div>
                                                         <div class="border border-purple-600 text-purple-600 p-1 px-2 rounded-lg lowercase text-xs whitespace-nowrap">study cASE</div>
                                                     </div>
+                                                    <h6 class="text-slate-700 font-medium text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h6>
+                                                    <p class="text-slate-400 dark:text-purple-300 line-clamp-3 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa exercitationem dolorum quae rerum. Neque dolore fugit</p>
                                                 </a>
                                             </div>
                                             <div>
                                                 <a href="" class="block w-full max-w-[40em]">
                                                     <img src="https://placehold.co/720x480" alt="Image Projects" class="block mb-3 w-full rounded-3xl aspect-video object-cover">
-                                                    <h6 class="text-slate-700 font-medium mb-3 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h6>
-                                                    <div class="flex items-center gap-2">
+                                                    <div class="flex items-center gap-2 mb-2">
                                                         <div class="border border-purple-600 text-purple-600 p-1 px-2 rounded-lg lowercase text-xs whitespace-nowrap">web development</div>
                                                         <div class="border border-purple-600 text-purple-600 p-1 px-2 rounded-lg lowercase text-xs whitespace-nowrap">study cASE</div>
                                                     </div>
+                                                    <h6 class="text-slate-700 font-medium text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h6>
+                                                    <p class="text-slate-400 dark:text-purple-300 line-clamp-3 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa exercitationem dolorum quae rerum. Neque dolore fugit</p>
                                                 </a>
                                             </div>
                                             <div>
                                                 <a href="" class="block w-full max-w-[40em]">
                                                     <img src="https://placehold.co/720x480" alt="Image Projects" class="block mb-3 w-full rounded-3xl aspect-video object-cover">
-                                                    <h6 class="text-slate-700 font-medium mb-3 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h6>
-                                                    <div class="flex items-center gap-2">
+                                                    <div class="flex items-center gap-2 mb-2">
                                                         <div class="border border-purple-600 text-purple-600 p-1 px-2 rounded-lg lowercase text-xs whitespace-nowrap">web development</div>
                                                         <div class="border border-purple-600 text-purple-600 p-1 px-2 rounded-lg lowercase text-xs whitespace-nowrap">study cASE</div>
                                                     </div>
+                                                    <h6 class="text-slate-700 font-medium text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h6>
+                                                    <p class="text-slate-400 dark:text-purple-300 line-clamp-3 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa exercitationem dolorum quae rerum. Neque dolore fugit</p>
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="flex items-center gap-4 absolute bottom-0 left-0">
+                                        <div class="flex items-center gap-4">
                                             <div class="prevBtn hover:bg-purple-600 hover:text-white bg-purple-200 p-2 px-5 rounded-3xl uppercase font-medium text-purple-600 flex items-center gap-2 cursor-pointer">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M5.841 5.28a.75.75 0 0 0-1.06-1.06L1.53 7.47L1 8l.53.53l3.25 3.25a.75.75 0 0 0 1.061-1.06l-1.97-1.97H14.25a.75.75 0 0 0 0-1.5H3.871z" clip-rule="evenodd"/></svg>
                                                 Prev
@@ -199,58 +202,58 @@
                             </div>
                         </section>
                         
-                        <section class="min-h-full p-5 sm:p-10 bg-white">
+                        <section class="min-h-full p-5 sm:p-10 bg-white dark:bg-purple-700">
                             <div class="min-h-full" id="noScrollbar">
                                 <h2 class="text-3xl mb-2 fw-medium">Just Sharing to Relaxing My Brain</h2>
-                                <p class="text-slate-400">Block if you hate, Share if you like</p>
+                                <p class="text-slate-400 dark:text-purple-300">Block if you hate, Share if you like</p>
                                 <div class="grid grid-cols-1 md:grid-cols-3 md:gap-5">
-                                    <div class="mt-7 p-5 bg-purple-100  rounded-3xl">
-                                        <h6 class="text-lg font-medium"><span class="font-semibold text-purple-600 me-3">#</span>Latest Update</h6>
+                                    <div class="mt-7 p-5 bg-violet-50 dark:bg-purple-800 rounded-3xl">
+                                        <h6 class="text-lg font-medium"><span class="font-semibold text-purple-600 dark:text-purple-400 me-3">#</span>Latest Update</h6>
                                         <div class="mt-4 w-full news-carousel owl-carousel owl-theme">
-                                            <div class="rounded-3xl p-2 bg-white">
+                                            <div class="rounded-3xl p-2 bg-white dark:bg-purple-700">
                                                 <img src="https://placehold.co/720x480" alt="Image News" class="block rounded-2xl mb-1 w-full aspect-video object-cover">
                                                 <div class="p-3">
                                                     <div class="text-purple-500 mb-1 text-xs">08 Oktober 2024</div>
                                                     <h5 class="font-medium mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h5>
-                                                    <p class="text-slate-400 text-sm line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt corrupti perferendis quasi id alias, placeat quos, harum officia quaerat, reiciendi.</p>
+                                                    <p class="text-slate-400 dark:text-purple-300 text-sm line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt corrupti perferendis quasi id alias, placeat quos, harum officia quaerat, reiciendi.</p>
                                                 </div>
                                             </div>
-                                            <div class="rounded-3xl p-2 bg-white">
+                                            <div class="rounded-3xl p-2 bg-white dark:bg-purple-700">
                                                 <img src="https://placehold.co/720x480" alt="Image News" class="block rounded-2xl mb-1 w-full aspect-video object-cover">
                                                 <div class="p-3">
                                                     <div class="text-purple-500 mb-1 text-xs">08 Oktober 2024</div>
                                                     <h5 class="font-medium mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h5>
-                                                    <p class="text-slate-400 text-sm line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt corrupti perferendis quasi id alias, placeat quos, harum officia quaerat, reiciendi.</p>
+                                                    <p class="text-slate-400 dark:text-purple-300 text-sm line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt corrupti perferendis quasi id alias, placeat quos, harum officia quaerat, reiciendi.</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="news-dots"></div>
                                     </div>
                                     <div class="col-span-2 mt-7">
-                                        <h6 class="text-lg mb-3 font-medium"><span class="font-semibold text-purple-600 me-3">#</span>Hot Learn Pack</h6>
+                                        <h6 class="text-lg mb-3 font-medium"><span class="font-semibold text-purple-600 dark:text-purple-400 me-3">#</span>Hot Learn Pack</h6>
                                         <div class="flex flex-col gap-3">
-                                            <div class="p-2 border-2 flex flex-col md:flex-row items-start gap-2 md:gap-4 border-purple-100 rounded-3xl">
+                                            <div class="p-2 border-2 flex flex-col md:flex-row items-start gap-2 md:gap-4 border-purple-100 dark:border-purple-800 dark:bg-purple-800 rounded-3xl">
                                                 <img src="https://placehold.co/720x480" alt="Image Learn Pack" class="block rounded-2xl aspect-video object-cover min-h-[8em] w-full md:max-h-[9em]">
                                                 <div class="p-3 md:py-3">
                                                     <h5 class="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit</h5>
-                                                    <p class="text-sm text-slate-400 line-clamp-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sed, earum, alias ducimus numquam fugiat ea nostrum iste voluptas ipsum animi veritatis repellendus ratione quae incidunt non commodi et recusandae.</p>
-                                                    <div class="inline-flex items-center gap-2 mt-3 p-2 px-3 rounded-lg bg-purple-100">
+                                                    <p class="text-sm text-slate-400 dark:text-purple-300 line-clamp-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sed, earum, alias ducimus numquam fugiat ea nostrum iste voluptas ipsum animi veritatis repellendus ratione quae incidunt non commodi et recusandae.</p>
+                                                    <div class="inline-flex items-center gap-2 mt-3 p-2 px-3 rounded-lg bg-violet-50 dark:bg-purple-900">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M7 13a2 2 0 0 1 1.995 1.85L9 15v3a2 2 0 0 1-1.85 1.995L7 20H4a2 2 0 0 1-1.995-1.85L2 18v-3a2 2 0 0 1 1.85-1.995L4 13zm9 4a1 1 0 0 1 .117 1.993L16 19h-4a1 1 0 0 1-.117-1.993L12 17zm4-4a1 1 0 1 1 0 2h-8a1 1 0 1 1 0-2zM7 3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm9 4a1 1 0 0 1 .117 1.993L16 9h-4a1 1 0 0 1-.117-1.993L12 7zm4-4a1 1 0 0 1 .117 1.993L20 5h-8a1 1 0 0 1-.117-1.993L12 3z"/></g></svg>
                                                         <div>
-                                                            <span class="font-semibold text-purple-600">6</span> <span class="text-sm text-slate-400">Chapters</span>
+                                                            <span class="font-semibold text-purple-600">6</span> <span class="text-sm text-slate-700 dark:text-slate-300">Chapters</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="p-2 border-2 flex flex-col md:flex-row items-start gap-2 md:gap-4 border-purple-100 rounded-3xl">
+                                            <div class="p-2 border-2 flex flex-col md:flex-row items-start gap-2 md:gap-4 border-purple-100 dark:border-purple-800 dark:bg-purple-800 rounded-3xl">
                                                 <img src="https://placehold.co/720x480" alt="Image Learn Pack" class="block rounded-2xl aspect-video object-cover min-h-[8em] w-full md:max-h-[9em]">
                                                 <div class="p-3 md:py-3">
                                                     <h5 class="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit</h5>
-                                                    <p class="text-sm text-slate-400 line-clamp-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sed, earum, alias ducimus numquam fugiat ea nostrum iste voluptas ipsum animi veritatis repellendus ratione quae incidunt non commodi et recusandae.</p>
-                                                    <div class="inline-flex items-center gap-2 mt-3 p-2 px-3 rounded-lg bg-purple-100">
+                                                    <p class="text-sm text-slate-400 dark:text-purple-300 line-clamp-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sed, earum, alias ducimus numquam fugiat ea nostrum iste voluptas ipsum animi veritatis repellendus ratione quae incidunt non commodi et recusandae.</p>
+                                                    <div class="inline-flex items-center gap-2 mt-3 p-2 px-3 rounded-lg bg-violet-50 dark:bg-purple-900">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M7 13a2 2 0 0 1 1.995 1.85L9 15v3a2 2 0 0 1-1.85 1.995L7 20H4a2 2 0 0 1-1.995-1.85L2 18v-3a2 2 0 0 1 1.85-1.995L4 13zm9 4a1 1 0 0 1 .117 1.993L16 19h-4a1 1 0 0 1-.117-1.993L12 17zm4-4a1 1 0 1 1 0 2h-8a1 1 0 1 1 0-2zM7 3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm9 4a1 1 0 0 1 .117 1.993L16 9h-4a1 1 0 0 1-.117-1.993L12 7zm4-4a1 1 0 0 1 .117 1.993L20 5h-8a1 1 0 0 1-.117-1.993L12 3z"/></g></svg>
                                                         <div>
-                                                            <span class="font-semibold text-purple-600">6</span> <span class="text-sm text-slate-400">Chapters</span>
+                                                            <span class="font-semibold text-purple-600">6</span> <span class="text-sm text-slate-700 dark:text-slate-300">Chapters</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -277,11 +280,20 @@
     </div>
 
     <script>
+    initTheme();
+    function initTheme(){
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    };
+
     function toggleDropdown(menuId) {
         console.log('clicked');
         const menu = document.getElementById(menuId);
         menu.classList.toggle('hidden');
-    }
+    };
     </script>
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
