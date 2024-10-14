@@ -112,9 +112,9 @@
                         </section>
                         
                         <section class="min-h-content w-full bg-violet-100 p-4 sm:p-8">
-                            <div id="projectsContainer" class="h-[87vh] md:h-[96vh] relative flex items-center justify-center overflow-hidden">
+                            <div id="projectsContainer" class="h-[85vh] md:h-[96vh] relative flex items-center justify-center overflow-hidden">
                                 <!-- Box Intro Projects -->
-                                <div id="introBox" class="absolute h-[87vh] md:h-[96vh] w-full transition-transform duration-500 ease-in-out">
+                                <div id="introBox" class="absolute h-[85vh] md:h-[96vh] w-full transition-transform duration-500 ease-in-out">
                                     <div class="relative h-full flex items-center justify-center">
                                         <div class="absolute top-2 left-2 max-w-[10em] sm:max-w-[20em]">
                                             <h2 class="text-xl sm:text-3xl mb-2 font-medium dark:text-violet-950">My Projects is My Cases</h2>
@@ -129,75 +129,17 @@
                                             <p class="text-lg text-slate-400 dark:text-slate-400">Cases</p>
                                         </div>
                                         <div class="absolute bottom-2 right-2 text-right">
-                                            <button id="seeProjectsBtn" type="button" class="p-4 px-6 rounded-[99px] font-medium bg-slate-800 text-purple-100 inline-flex items-center gap-3">
+                                            <a href="./projects.html" class="p-4 px-6 rounded-[99px] font-medium bg-slate-800 text-purple-100 inline-flex items-center gap-3">
                                                 <span class="hidden md:block text-white">See The Projects / Cases</span>
                                                 <span class="block md:hidden">See Projects</span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M1.25 8A.75.75 0 0 1 2 7.25h10.19L9.47 4.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H2A.75.75 0 0 1 1.25 8" clip-rule="evenodd"/></svg>
-                                            </button>
+                                            </a>
                                         </div>
                         
                                         <div class="">
                                             <div class="text-purple-400 text-2xl sm:text-4xl">I Do</div>
                                             <div id="analyzing-text" class="text-2xl sm:text-4xl font-medium underline decoration-3 decoration-purple-600 text-slate-800"></div>
                                         </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Item Projects -->
-                                <div id="itemProjects" class="bg-transparent h-[87vh] md:h-[96vh] w-full rounded-3xl absolute transform translate-x-full transition-transform duration-500 ease-in-out">
-                                    <div id="noScrollbar" class="bg-transparent h-[87vh] md:h-[96vh] w-full rounded-3xl overflow-auto">
-                                        <div class="flex items-center gap-2 justify-between mb-4">
-                                            <button id="backBtn" type="button" class="inline-flex items-center gap-3 rounded-3xl p-3 hover:bg-slate-700 hover:text-white font-medium text-slate-700">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M5.841 5.28a.75.75 0 0 0-1.06-1.06L1.53 7.47L1 8l.53.53l3.25 3.25a.75.75 0 0 0 1.061-1.06l-1.97-1.97H14.25a.75.75 0 0 0 0-1.5H3.871z" clip-rule="evenodd"/></svg>
-                                                Back
-                                            </button>
-                                            <div class="flex items-center gap-2">
-                                                <div class="prevBtn hover:bg-purple-600 hover:text-white bg-purple-200 p-2 px-5 rounded-3xl uppercase font-medium text-purple-600 flex items-center gap-2 cursor-pointer">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M5.841 5.28a.75.75 0 0 0-1.06-1.06L1.53 7.47L1 8l.53.53l3.25 3.25a.75.75 0 0 0 1.061-1.06l-1.97-1.97H14.25a.75.75 0 0 0 0-1.5H3.871z" clip-rule="evenodd"/></svg>
-                                                    <span class="hidden sm:inline-block">Prev</span>
-                                                </div>
-                                                <div class="nextBtn hover:bg-purple-600 hover:text-white bg-purple-200 p-2 px-5 rounded-3xl uppercase font-medium text-purple-600 flex items-center gap-2 cursor-pointer">
-                                                    <span class="hidden sm:inline-block">Next</span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M10.159 10.72a.75.75 0 1 0 1.06 1.06l3.25-3.25L15 8l-.53-.53l-3.25-3.25a.75.75 0 0 0-1.061 1.06l1.97 1.97H1.75a.75.75 0 1 0 0 1.5h10.379z" clip-rule="evenodd"/></svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="projects-carousel owl-carousel owl-theme">
-                                            <div>
-                                                <a href="" class="block w-full max-w-[40em]">
-                                                    <img src="https://placehold.co/720x480" alt="Image Projects" class="block mb-3 w-full rounded-3xl aspect-video object-cover">
-                                                    <div class="flex items-center gap-2 mb-2">
-                                                        <div class="border border-purple-600 text-purple-600 p-1 px-2 rounded-lg lowercase text-xs whitespace-nowrap">web development</div>
-                                                        <div class="border border-purple-600 text-purple-600 p-1 px-2 rounded-lg lowercase text-xs whitespace-nowrap">study cASE</div>
-                                                    </div>
-                                                    <h6 class="text-slate-700 font-medium text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h6>
-                                                    <p class="text-slate-400 dark:text-slate-400 line-clamp-3 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa exercitationem dolorum quae rerum. Neque dolore fugit</p>
-                                                </a>
-                                            </div>
-                                            <div>
-                                                <a href="" class="block w-full max-w-[40em]">
-                                                    <img src="https://placehold.co/720x480" alt="Image Projects" class="block mb-3 w-full rounded-3xl aspect-video object-cover">
-                                                    <div class="flex items-center gap-2 mb-2">
-                                                        <div class="border border-purple-600 text-purple-600 p-1 px-2 rounded-lg lowercase text-xs whitespace-nowrap">web development</div>
-                                                        <div class="border border-purple-600 text-purple-600 p-1 px-2 rounded-lg lowercase text-xs whitespace-nowrap">study cASE</div>
-                                                    </div>
-                                                    <h6 class="text-slate-700 font-medium text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h6>
-                                                    <p class="text-slate-400 dark:text-slate-400 line-clamp-3 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa exercitationem dolorum quae rerum. Neque dolore fugit</p>
-                                                </a>
-                                            </div>
-                                            <div>
-                                                <a href="" class="block w-full max-w-[40em]">
-                                                    <img src="https://placehold.co/720x480" alt="Image Projects" class="block mb-3 w-full rounded-3xl aspect-video object-cover">
-                                                    <div class="flex items-center gap-2 mb-2">
-                                                        <div class="border border-purple-600 text-purple-600 p-1 px-2 rounded-lg lowercase text-xs whitespace-nowrap">web development</div>
-                                                        <div class="border border-purple-600 text-purple-600 p-1 px-2 rounded-lg lowercase text-xs whitespace-nowrap">study cASE</div>
-                                                    </div>
-                                                    <h6 class="text-slate-700 font-medium text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h6>
-                                                    <p class="text-slate-400 dark:text-slate-400 line-clamp-3 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa exercitationem dolorum quae rerum. Neque dolore fugit</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -372,6 +314,95 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="/src/js/script.js"></script>
     <script src="/src/js/carousel.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+            
+        // Animasi teks mengetik untuk job titles
+        const typedTextSpan = document.getElementById('typed-text');
+        const cursorSpan = document.getElementById('cursor');
+        const jobTextArray = ["Web Developer", "Data Analyst", "UI Designer", "UX Researcher", "Mobile Developer", "System Analyst"];
+
+        // Animasi teks mengetik untuk analyzing
+        const analyzingTextSpan = document.getElementById('analyzing-text');
+        const analyzingTextArray = ["Emphatizing...", "Analyzing...", "Defining...", "Designing...", "Validating...", "Developing...", "Testing...", "Drinking :D"];
+
+        const typingDelay = 150; // Delay antara setiap karakter
+        const erasingDelay = 100; // Delay antara setiap karakter saat menghapus
+        const newTextDelay = 2000; // Delay antara teks saat berpindah
+        let jobTextIndex = 0;
+        let analyzingTextIndex = 0;
+
+        // Fungsi untuk mengatur pengindeksan karakter
+        let jobCharIndex = 0;
+        let analyzingCharIndex = 0;
+
+        function typeJobText() {
+            if (jobCharIndex < jobTextArray[jobTextIndex].length) {
+                typedTextSpan.textContent += jobTextArray[jobTextIndex].charAt(jobCharIndex);
+                jobCharIndex++;
+                setTimeout(typeJobText, typingDelay);
+            } else {
+                setTimeout(eraseJobText, newTextDelay);
+            }
+        }
+
+        function eraseJobText() {
+            if (jobCharIndex > 0) {
+                typedTextSpan.textContent = jobTextArray[jobTextIndex].substring(0, jobCharIndex - 1);
+                jobCharIndex--;
+                setTimeout(eraseJobText, erasingDelay);
+            } else {
+                jobTextIndex++;
+                if (jobTextIndex >= jobTextArray.length) jobTextIndex = 0;
+                jobCharIndex = 0; // Reset karakter index
+                setTimeout(typeJobText, typingDelay + 1100); // Tunggu sebelum mulai mengetik teks berikutnya
+            }
+        }
+
+        function typeAnalyzingText() {
+            if (analyzingCharIndex < analyzingTextArray[analyzingTextIndex].length) {
+                analyzingTextSpan.textContent += analyzingTextArray[analyzingTextIndex].charAt(analyzingCharIndex);
+                analyzingCharIndex++;
+                setTimeout(typeAnalyzingText, typingDelay);
+            } else {
+                setTimeout(eraseAnalyzingText, newTextDelay);
+            }
+        }
+
+        function eraseAnalyzingText() {
+            if (analyzingCharIndex > 0) {
+                analyzingTextSpan.textContent = analyzingTextArray[analyzingTextIndex].substring(0, analyzingCharIndex - 1);
+                analyzingCharIndex--;
+                setTimeout(eraseAnalyzingText, erasingDelay);
+            } else {
+                analyzingTextIndex++;
+                if (analyzingTextIndex >= analyzingTextArray.length) analyzingTextIndex = 0;
+                analyzingCharIndex = 0; // Reset karakter index
+                setTimeout(typeAnalyzingText, typingDelay + 1100); // Tunggu sebelum mulai mengetik teks berikutnya
+            }
+        }
+
+        // Mulai animasi teks setelah halaman dimuat
+        if (jobTextArray.length) setTimeout(typeJobText, newTextDelay + 250);
+        if (analyzingTextArray.length) setTimeout(typeAnalyzingText, newTextDelay + 250);
+
+        // // -----------------------------
+        // const seeProjectsBtn = document.getElementById('seeProjectsBtn');
+        // const introBox = document.getElementById('introBox');
+        // const itemProjects = document.getElementById('itemProjects');
+        // const backBtn = document.getElementById('backBtn');
+
+        // seeProjectsBtn.addEventListener('click', () => {
+        //     introBox.classList.add('hide'); // Menyembunyikan intro box
+        //     itemProjects.classList.add('show'); // Menampilkan item projects
+        // });
+
+        // backBtn.addEventListener('click', () => {
+        //     introBox.classList.remove('hide'); // Menampilkan kembali intro box
+        //     itemProjects.classList.remove('show'); // Menyembunyikan item projects
+        // });
+    });
+    </script>
 </body>
 
 </html>
