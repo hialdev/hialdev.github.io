@@ -126,3 +126,12 @@ body {
         opacity: 0;
     }
 }
+
+/* Typing Contact */
+/* Animasi kursor berkedip */
+.cursor {
+    border-right: 2px solid rgba(255, 255, 255, 0.541);
+    display: inline;
+    animation: blink 0.2s steps(1) infinite;
+
+}
