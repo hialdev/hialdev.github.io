@@ -18,13 +18,16 @@
             
             <div class="grid w-full sm:w-[4em] grid-cols-12 px-2 sm:grid-cols-1 grid-rows-1 sm:grid-rows-3 items-center justify-between sm:p-2 sm:h-screen">
                 <div class="flex flex-row sm:flex-col col-span-3 items-center mb-auto">
-                    <a href="/" class="aspect-square object-cover flex items-center justify-center p-2 rounded-full bg-purple-700 w-[3em] h-[3em] my-3 sm:m-3 text-white">
+                    <a href="/projects.html" class="aspect-square object-cover flex items-center justify-center p-2 rounded-full bg-purple-700 w-[3em] h-[3em] my-3 sm:m-3 text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M5.841 5.28a.75.75 0 0 0-1.06-1.06L1.53 7.47L1 8l.53.53l3.25 3.25a.75.75 0 0 0 1.061-1.06l-1.97-1.97H14.25a.75.75 0 0 0 0-1.5H3.871z" clip-rule="evenodd"/></svg>
                     </a>
                     
                 </div>
                 <div class="col-span-6 flex items-center justify-center sm:-rotate-90 my-auto">
-                    <h1 class=" sm:text-xl uppercase tracking-widest whitespace-nowrap">My projects</h1>
+                    <div class="text-center">
+                        <div class=" sm:text-xl uppercase tracking-widest whitespace-nowrap -mb-1">My projects</div>
+                        <h1 class="text-sm text-slate-400 line-clamp-1">Lorem Ipsum Dolor Sit Amet Ase Lole Joss</h1>
+                    </div>
                 </div>
                 <div class="ms-auto col-span-3 me-4 sm:me-0 sm:ms-0 -rotate-90 sm:rotate-0 sm:mt-auto">
                     <div class="flex sm:flex-col items-center">
@@ -51,25 +54,21 @@
                     <div id="noScrollbar" class="overflow-auto h-screen">
                         <section class="min-h-content mb-8">
                             <!-- Filtering -->
-                            <div class="bg-white dark:bg-indigo-950 rounded-3xl relative flex flex-col items-center justify-center min-h-[86vh] p-10">
-                                <div class="text-center max-w-[30em] mb-5">
-                                    <h2 class="text-4xl mb-2">Read All My Case Studies</h2>
+                            <div class="bg-white dark:bg-indigo-950 rounded-3xl relative flex flex-col items-start justify-start min-h-[86vh] p-10">
+                                <div class="max-w-[30em] mb-5">
+                                    <div class="flex items-center gap-1 mb-4">
+                                        <span class="p-1 px-2 rounded-xl lowercase bg-purple-100 dark:bg-indigo-800 dark:text-purple-100 text-purple-950 text-sm sm:text-base">web</span>
+                                        <span class="p-1 px-2 rounded-xl lowercase bg-purple-100 dark:bg-indigo-800 dark:text-purple-100 text-purple-950 text-sm sm:text-base">ui</span>
+                                        <span class="p-1 px-2 rounded-xl lowercase bg-purple-100 dark:bg-indigo-800 dark:text-purple-100 text-purple-950 text-sm sm:text-base">system analyst</span>
+                                    </div>
+                                    <h2 class="text-4xl mb-2">Lorem Ipsum Dolor Sit Amet Ase Lole Joss</h2>
                                     <p class="text-slate-400">If my case inspire you or little usefull, plz give me applouse.. if you hate my case, just leave my site!</p>
                                 </div>
-                                <div class="inline-flex flex-col sm:flex-row items-center gap-3 rounded-3xl">
-                                    <div>
-                                        <select name="" id="" class="p-3 bg-transparent px-5 outline-0 focus:border-purple-700 rounded-3xl border-2 border-purple-700">
-                                            <option value="" selected>All Categories</option>
-                                        </select>
-                                    </div>
-                                    <div class="flex items-center gap-2 px-1 rounded-3xl overflow-hidden border-2 border-purple-700 ">
-                                        <input type="search" class="p-3 px-5 outline-0 border-0 bg-transparent" placeholder="Search Project">
-                                        <button class="flex items-center justify-center bg-purple-700 text-white p-3 rounded-3xl aspect-square">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21l-4.3-4.3"/></g></svg>
-                                        </button>
-                                    </div>
+                                <div class="inline-flex flex-row items-center gap-3 rounded-3xl">
+                                    <a href="" class="p-3 px-5 rounded-3xl border-2 border-purple-700 font-medium hover:bg-purple-100 hover:border-purple-300">View Demo</a>
+                                    <a href="" class="p-3 px-5 rounded-3xl border-2 bg-purple-700 text-white border-purple-700 font-medium hover:bg-purple-900 hover:border-purple-900">Want Like This</a>
                                 </div>
-                                <div class="absolute bottom-0 -mb-6">
+                                <div class="absolute bottom-0 self-center -mb-6">
                                     <div class="text-center font-medium">Scroll</div>
                                     <div class="rounded-[50px] p-2 bg-white dark:bg-indigo-950">
                                         <div class="icon-mouse flex items-center justify-center border-[3px] border-slate-900 dark:border-purple-100">
@@ -80,49 +79,61 @@
                             </div>
                         </section>
 
-                        <section class="min-h-content px-3 sm:px-0">
-                            <div class="relative w-full mb-5 rounded-3xl bg-indigo-100 overflow-hidden">
-                                <img src="https://placehold.co/720x480" alt="" class="block w-full object-cover aspect-video">
-                                <div class="absolute bottom-0 left-0 right-0 flex items-end top-0 bg-gradient-to-b from-transparent text-white to-slate-950">
-                                    <a href="/projects-detail.html" class="flex items-center p-5 sm:p-9 justify-between w-full">
-                                        <div>
-                                            <h6 class="sm:text-xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
-                                            <p class="text-slate-400 hidden sm:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consectetur reprehenderit assumenda nemo, magni quod</p>
-                                        </div>
-                                        <div class="flex items-center justify-center p-3 bg-purple-700 text-white aspect-square w-[3em] h-[3em] rounded-3xl">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="0.63em" height="1em" viewBox="0 0 320 512"><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256L73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
-                                        </div>
-                                    </a>
-                                </div>
+                        <section class="min-h-content p-5 pt-7 sm:p-10 text-slate-950 bg-fuchsia-200">
+                            <h3 class="text-xl mb-5 font-medium"><span class="text-purple-700 me-3">#</span>Emphatizing</h3>
+                            <div class="text-slate-600 content-box">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea explicabo et magnam ex labore blanditiis facere minima. Quisquam labore, ducimus officia cum itaque cumque impedit suscipit aliquid ut consequuntur.
+                                    Ex, cumque quod quis alias iure in rerum debitis modi eveniet dolor hic, commodi numquam quas dicta aliquid harum, quisquam necessitatibus consequatur. Dicta officiis tenetur totam aspernatur voluptatem commodi optio.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea explicabo et magnam ex labore blanditiis facere minima. Quisquam labore, ducimus officia cum itaque cumque impedit suscipit aliquid ut consequuntur.
+                                </p>
                             </div>
-                            <div class="relative w-full mb-5 rounded-3xl bg-indigo-100 overflow-hidden">
-                                <img src="https://placehold.co/720x480" alt="" class="block w-full object-cover aspect-video">
-                                <div class="absolute bottom-0 left-0 right-0 flex items-end top-0 bg-gradient-to-b from-transparent text-white to-slate-950">
-                                    <a href="/projects-detail.html" class="flex items-center p-5 sm:p-9 justify-between w-full">
-                                        <div>
-                                            <h6 class="sm:text-xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
-                                            <p class="text-slate-400 hidden sm:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consectetur reprehenderit assumenda nemo, magni quod</p>
-                                        </div>
-                                        <div class="flex items-center justify-center p-3 bg-purple-700 text-white aspect-square w-[3em] h-[3em] rounded-3xl">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="0.63em" height="1em" viewBox="0 0 320 512"><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256L73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
-                                        </div>
-                                    </a>
-                                </div>
+                        </section>
+
+                        <section class="min-h-content p-5 pt-7 sm:p-10 text-slate-950 bg-yellow-100">
+                            <h3 class="text-xl mb-5 font-medium"><span class="text-purple-700 me-3">#</span>Analyzing</h3>
+                            <div class="text-slate-600 content-box">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea explicabo et magnam ex labore blanditiis facere minima. Quisquam labore, ducimus officia cum itaque cumque impedit suscipit aliquid ut consequuntur.
+                                    Ex, cumque quod quis alias iure in rerum debitis modi eveniet dolor hic, commodi numquam quas dicta aliquid harum, quisquam necessitatibus consequatur. Dicta officiis tenetur totam aspernatur voluptatem commodi optio.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea explicabo et magnam ex labore blanditiis facere minima. Quisquam labore, ducimus officia cum itaque cumque impedit suscipit aliquid ut consequuntur.
+                                </p>
                             </div>
-                            <div class="relative w-full mb-5 rounded-3xl bg-indigo-100 overflow-hidden">
-                                <img src="https://placehold.co/720x480" alt="" class="block w-full object-cover aspect-video">
-                                <div class="absolute bottom-0 left-0 right-0 flex items-end top-0 bg-gradient-to-b from-transparent text-white to-slate-950">
-                                    <a href="/projects-detail.html" class="flex items-center p-5 sm:p-9 justify-between w-full">
-                                        <div>
-                                            <h6 class="sm:text-xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
-                                            <p class="text-slate-400 hidden sm:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consectetur reprehenderit assumenda nemo, magni quod</p>
-                                        </div>
-                                        <div class="flex items-center justify-center p-3 bg-purple-700 text-white aspect-square w-[3em] h-[3em] rounded-3xl">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="0.63em" height="1em" viewBox="0 0 320 512"><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256L73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
-                                        </div>
-                                    </a>
-                                </div>
+                        </section>
+
+                        <section class="min-h-content p-5 pt-7 sm:p-10 text-slate-950 bg-emerald-100">
+                            <h3 class="text-xl mb-5 font-medium"><span class="text-purple-700 me-3">#</span>Defining</h3>
+                            <div class="text-slate-600 content-box">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea explicabo et magnam ex labore blanditiis facere minima. Quisquam labore, ducimus officia cum itaque cumque impedit suscipit aliquid ut consequuntur.
+                                    Ex, cumque quod quis alias iure in rerum debitis modi eveniet dolor hic, commodi numquam quas dicta aliquid harum, quisquam necessitatibus consequatur. Dicta officiis tenetur totam aspernatur voluptatem commodi optio.
+                                </p>
+                                <ul>
+                                    <li>One</li>
+                                    <li>Two</li>
+                                    <li>Three</li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea explicabo et magnam ex labore blanditiis facere minima. Quisquam labore, ducimus officia cum itaque cumque impedit suscipit aliquid ut consequuntur.
+                                </p>
+                                <ol>
+                                    <li>One</li>
+                                    <li>Two</li>
+                                    <li>Three</li>
+                                </ol>
+
+                                <img src="https://placehold.co/720x480" alt="">
+
                             </div>
+                        </section>
+
+                        <section class="min-h-content p-5 sm:p-10 text-slate-950 bg-blue-100">
+                            <h3 class="text-xl mb-5 font-medium"><span class="text-purple-700 me-3">#</span>Designing</h3>
+                            <img src="https://placehold.co/720x480" alt="" class="block rounded-3xl w-full object-cover aspect-video">
                         </section>
 
                         <footer>

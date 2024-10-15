@@ -91,6 +91,35 @@ body {
     cursor: none;
 }
 
+/* Icon Mouse */
+/* Mouse icon styling */
+.icon-mouse {
+    width: 50px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+/* Scroll indicator inside the mouse */
+.icon-mouse .scroll {
+    width: 5px;
+    height: 15px;
+    border-radius: 10px;
+    animation: scroll 1s infinite ease-in-out;
+}
+
+/* Keyframes for the scroll animation */
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .custom-cursor {
     position: fixed;
     width: 30px;
@@ -134,4 +163,47 @@ body {
     display: inline;
     animation: blink 0.2s steps(1) infinite;
 
+}
+
+/* Content Box */
+.content-box p{
+    @apply mb-4;
+}
+
+.content-box p:first-child::first-letter {
+    font-size: 3rem;
+    font-weight:400;
+    float: left;
+    line-height: 1;
+    margin-right: 8px;
+}
+
+.content-box ol, .content-box ul {
+    @apply mb-4;
+}
+
+.content-box ol li{
+    list-style-type: decimal;
+    @apply ms-[20px];
+}
+
+.content-box ol li::marker {
+    @apply text-purple-700 font-medium;
+}
+
+.content-box img{
+    @apply block rounded-3xl w-full object-cover;
+}
+
+.content-box ul li {
+    position: relative;
+    padding-left: 24px;
+}
+.content-box ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 15px;
+    @apply bg-purple-700 mt-3;
 }
