@@ -184,7 +184,7 @@ body {
 
 .content-box ol li{
     list-style-type: decimal;
-    @apply ms-[20px];
+    @apply ms-[20px] mb-2;
 }
 
 .content-box ol li::marker {
@@ -192,12 +192,13 @@ body {
 }
 
 .content-box img{
-    @apply block rounded-3xl w-full object-cover;
+    @apply block rounded-3xl w-full object-cover mb-3;
 }
 
 .content-box ul li {
     position: relative;
     padding-left: 24px;
+    @apply mb-2;
 }
 .content-box ul li::before {
     content: '';
@@ -206,4 +207,33 @@ body {
     height: 2px;
     width: 15px;
     @apply bg-purple-700 mt-3;
+}
+
+.content-box h2,.content-box h3,.content-box h4,.content-box h5,.content-box h6{
+    @apply font-medium text-slate-950 mb-3;
+}
+
+.content-box h2{
+    @apply text-3xl;
+}
+
+.content-box h3{
+    @apply text-2xl;
+}
+
+.content-box h4{
+    @apply text-xl;
+}
+
+.content-box h5{
+    @apply text-lg;
+}
+
+.content-box h6{
+    @apply text-base;
+}
+
+.content-box.content-article h2::before,.content-box.content-article h3::before,.content-box.content-article h4::before,.content-box.content-article h5::before{
+    content: '#';
+    @apply text-purple-700 pe-2;
 }
